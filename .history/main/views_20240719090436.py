@@ -1,0 +1,13 @@
+from django.shortcuts import render
+
+def cars(request):
+
+    return render(request, 'watches.html', context={'list': 'Mashinalar ro`yxati'})
+
+
+def company(request):
+    return render(request, 'register.html', context={'list1': 'Kompaniyalar ro`yxati'}) 
+
+
+def coder(request):
+    return render(request, 'appeals.html', context={'list2': 'Dasturlash tillari ro`yxati'})
